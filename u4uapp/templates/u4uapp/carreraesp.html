@@ -1,0 +1,56 @@
+{% extends "./base.html" %}
+    
+{% block content %}
+<div class="m-4">
+<section class="container">
+  <div class="row">
+    <div class="col-4">
+    <div class="col-8 align-self-start">
+      <h3 class= "fw-light fs-1">{{ carreraesp.nombrec }}</h3>
+    </div>
+  </div> 
+</section>
+</div>
+
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h11 class="fw-light">Información General</h11>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="m-3">
+                <table style="width:40%">
+                  <tr>
+                    <th style="background-color:#F5F5F5">Area</th>
+                    <td style="background-color:#FFFFFF">{{ carreraesp.area }}</td>
+                  </tr>
+                  <tr> 
+                    <th style="background-color:#FFFFFF">Puntaje de corte</th>
+                    <td style="background-color:#F5F5F5">{{ carreraesp.puntaje }}</td>                    
+                  </tr>
+                  <tr>
+                    <th style="background-color:#F5F5F5">Porcentaje</th>
+                    <td style="background-color:#FFFFFF">{{ carreraesp.porcentaje }}</td>                    
+                  </tr>
+                  <tr>
+                    <th style="background-color:#FFFFFF">Duracion</th>
+                    <td style="background-color:#F5F5F5">{{ carreraesp.duracion }}</td>                                        
+                  </tr>   
+                </table>
+              </div>
+            </div>
+          </div>      
+      </div>
+      <div class="col-sm">
+        <h11 class="fw-light">Ubicacion</h11>
+          <div class="col">
+            <div class="card shadow-sm">
+              <p class="card-text">{{ carreraesp.ubicacion }}</p>
+            </div>
+          </div>
+      </div>        
+    </div>
+  </div>
+</div>
+{% endblock %}

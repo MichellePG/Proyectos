@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>U4U</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/u4uapp/base.css">
+  </head>
+  <body>
+    <nav class="navbar" id="navbar2">
+      <div class="container-fluid">
+          <div id="logo">U4U</div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" id="barra_buscador" type="search" placeholder="Universidad/Carrera..." aria-label="Search">
+              <button class="btn btn-outline-success" id="buscar" type="submit">Buscar</button>
+            </form>
+          <div class="text-end">
+              {% if user.is_authenticated %}
+                <a href="/cerrar_sesion"><button type="button" class="btn btn-danger">Cerrar Sesi&oacute;n</button></a>
+              {% else %}
+                <a href="/iniciar_sesion"><button type="button" class="btn btn-outline-dark me-2" id="signin_boton">Iniciar sesi&oacute;n</button></a>
+                <a href="/registrar_usuario"><button type="button" class="btn btn-warning" id="signup_boton">Registrarme</button></a>
+              {% endif %}
+          </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/universidades">Universidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/carreras">Carreras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Simulador</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    
+    {% block content %}
+    
+    {% endblock %}
+    
+  </body>
+</html>

@@ -1,0 +1,146 @@
+[
+  {
+    "model": "u4uapp.carreraesp",
+    "pk": 11,
+    "fields": {
+      "nombrec": "Medicina | Universidad de Chile ",
+      "area": "Salud",
+      "puntaje": "780.00",
+      "porcentaje": "NEM:10%  Ranking:20%  Lenguaje:10%  Ciencias:30%  Matemáticas:30%  Historia:0%",
+      "duracion": "14 Semestres",
+      "ubicacion": "Campus Dra. Eloísa Díaz, Av. Independencia 1027, Independencia, Región Metropolitana"
+    }
+  },
+  {
+    "model": "u4uapp.carreraesp",
+    "pk": 12,
+    "fields": {
+      "nombrec": "Medicina | Pontificia Universidad Católica de Chile",
+      "area": "Salud",
+      "puntaje": "804.30",
+      "porcentaje": "NEM:20%  Ranking:20%  Lenguaje:15%  Ciencias:25%  Matemáticas:20%  Historia:0%",
+      "duracion": "12 Semestres",
+      "ubicacion": "Campus Casa Central, Av. General Libertador Bernardo O'Higgins 340, Santiago"
+    }
+  },
+  {
+    "model": "u4uapp.carreraesp",
+    "pk": 13,
+    "fields": {
+      "nombrec": "Medicina | Universidad de Concepción",
+      "area": "Salud",
+      "puntaje": "769.45",
+      "porcentaje": "NEM:15%  Ranking:25%  Lenguaje:15%  Ciencias:10%  Matemáticas:35%  Historia:0%",
+      "duracion": "14 Semestres",
+      "ubicacion": "Sede Concepcion, Janequeo esquina, Av. Chacabuco S/N, Concepción, Bío Bío"
+    }
+  },
+  {
+    "model": "u4uapp.carreraesp",
+    "pk": 21,
+    "fields": {
+      "nombrec": "Periodismo | Universidad de Chile",
+      "area": "Ciencias Sociales",
+      "puntaje": "660.75",
+      "porcentaje": "NEM:10%  Ranking:30%  Lenguaje:30%  Ciencias:0%  Matemáticas:15%   Historia:15%",
+      "duracion": "10 Semestres",
+      "ubicacion": "Facultad de Comunicación e Imagen, Av. Ignacio Carrera Pinto 1045, Ñuñoa, Santiago"
+    }
+  },
+  {
+    "model": "u4uapp.carreraesp",
+    "pk": 22,
+    "fields": {
+      "nombrec": "Periodismo | Pontificia Universidad Católica de Chile",
+      "area": "Salud",
+      "puntaje": "687.55",
+      "porcentaje": "NEM:25%  Ranking:25%  Lenguaje:20%  Ciencias:0%  Matemáticas:20%   Historia:10%",
+      "duracion": "9 Semestres",
+      "ubicacion": "Facultad de Comunicaciones UC, Av. Libertador Bernardo O'Higgins 340, Santiago, Región Metropolitana"
+    }
+  },
+  {
+    "model": "u4uapp.carreraesp",
+    "pk": 23,
+    "fields": {
+      "nombrec": "Periodismo | Universidad de Concepción",
+      "area": "Ciencias Sociales",
+      "puntaje": "589.80",
+      "porcentaje": "NEM:15%  Ranking:25%  Lenguaje:30%  Ciencias:0%  Matemáticas:15%   Historia:15%",
+      "duracion": "10 Semestres",
+      "ubicacion": "Campus Concepción, Víctor Lamas 1290"
+    }
+  },
+  {
+    "model": "u4uapp.carreraesp",
+    "pk": 31,
+    "fields": {
+      "nombrec": "Psicología | Universidad de Chile",
+      "area": "Ciencias Sociales",
+      "puntaje": "731.15",
+      "porcentaje": "NEM:10%  Ranking:30%  Lenguaje:25%  Ciencias:15%  Matemáticas:20%   Historia:15%",
+      "duracion": "12 Semestres",
+      "ubicacion": "Facultad de Ciencias Sociales, Avenida, Capitán Ignacio Carrera Pinto 1045, Ñuñoa, Región Metropolitana"
+    }
+  },
+  {
+    "model": "u4uapp.carreraesp",
+    "pk": 32,
+    "fields": {
+      "nombrec": "Psicología | Pontificia Universidad Católica de Chile",
+      "area": "Ciencias Sociales",
+      "puntaje": "735.60",
+      "porcentaje": "NEM:25%  Ranking:25%  Lenguaje:10%  Ciencias:20%  Matemáticas:20%   Historia:20%",
+      "duracion": "10 Semestres",
+      "ubicacion": "Facultad de Ciencias Sociales, Campus San Joaquin Av. Vicuña Mackenna 4860, Macul"
+    }
+  },
+  {
+    "model": "u4uapp.carreraesp",
+    "pk": 33,
+    "fields": {
+      "nombrec": "Psicologia | Universidad de Concepción",
+      "area": "Ciencias Sociales",
+      "puntaje": " 689.15",
+      "porcentaje": "NEM:15%  Ranking:25%  Lenguaje:20%  Ciencias:10%  Matemáticas:30%   Historia:10%",
+      "duracion": "11 Semestres",
+      "ubicacion": "Facultad de Ciencias Sociales, Víctor Lamas 1290, Concepción, Bío Bío"
+    }
+  },
+  {
+    "model": "u4uapp.carreraesp",
+    "pk": 34,
+    "fields": {
+      "nombrec": "Psicología | Universidad de Aysén",
+      "area": "Ciencias Sociales",
+      "puntaje": "---",
+      "porcentaje": "NEM:10%  Ranking:40%  Lenguaje:25%  Ciencias:10%  Matemáticas:15%   Historia:10%",
+      "duracion": "10 Semestres",
+      "ubicacion": "Campus Lillo, Eusebio Lillo 667, Coyhaique"
+    }
+  },
+  {
+    "model": "u4uapp.carreraesp",
+    "pk": 42,
+    "fields": {
+      "nombrec": "Teologia | Pontificia Universidad Católica de Chile",
+      "area": "Sin area definida",
+      "puntaje": "---",
+      "porcentaje": "NEM:25%  Ranking:25%  Lenguaje:25%  Ciencias:0%  Matemáticas:10%   Historia:15%",
+      "duracion": "10 Semestres",
+      "ubicacion": "Facultad de Teología UC, Av. Macul, Vicuña Mackenna 4860, Santiago, Región Metropolitana"
+    }
+  },
+  {
+    "model": "u4uapp.carreraesp",
+    "pk": 52,
+    "fields": {
+      "nombrec": "Estetica | Pontificia Universidad Católica de Chile",
+      "area": "Sin area definida",
+      "puntaje": "No aplica",
+      "porcentaje": "Ingreso por admisión especial",
+      "duracion": "4 Semestres",
+      "ubicacion": "Facultad de Filosofía, Avda. Jaime Guzmán Errázuriz 3.300 - Providencia - Santiago - Chile"
+    }
+  }
+]

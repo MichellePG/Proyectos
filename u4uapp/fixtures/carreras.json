@@ -1,0 +1,64 @@
+[
+  {
+    "model": "u4uapp.carrera",
+    "pk": 1,
+    "fields": {
+      "nombre": "Medicina",
+      "universidades": [
+        1,
+        2,
+        3
+      ],
+      "infog": "La carrera de Medicina brinda el conocimiento para diagnosticar y tratar pacientes, prevenir enfermedades, administrar los recursos farmacológicos y estar capacitado para los cambios científicos y tecnológicos. En un principio el médico está preparado para resolver problemas de salud generales y luego puede especializarse en un área en particular."
+    }
+  },
+  {
+    "model": "u4uapp.carrera",
+    "pk": 2,
+    "fields": {
+      "nombre": "Periodismo",
+      "universidades": [
+        1,
+        2,
+        3
+      ],
+      "infog": "La Carrera de Periodismo forma a sus estudiantes en todo lo que tiene que ver con los sistemas de comunicación existentes y los códigos que cada uno de ellos propone. Asimismo, se encarga de brindar las herramientas con las que los alumnos indagarán la realidad o el pasado, con el fin de generar conocimiento acerca de lo que ha ocurrido o lo que se proyecta hacia el futuro. Como el modo en que se comunican los datos varía de acuerdo al estilo de que se trate, la Carrera de Periodismo también se encarga de la formación en distintos tipos de escritura y tipologías textuales, como puede ser: el informe, la crónica, la noticia, la entrevista, la nota de opinión, entre otros."
+    }
+  },
+  {
+    "model": "u4uapp.carrera",
+    "pk": 3,
+    "fields": {
+      "nombre": "Psicología",
+      "universidades": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "infog": "La carrera de Psicología brinda los conocimientos para entender y analizar el comportamiento humano y mejorar el desarrollo de la salud mental. La psicología estudia aquello relacionado con la conducta humana tanto en lo que hace a su biología, como a sus aspectos sociales y culturales. Se focaliza en cómo estas conductas repercuten en los comportamientos, en la personalidad, en las emociones y también en la formación de trastornos que se van elaborando a lo largo del tiempo en la mente del ser humano."
+    }
+  },
+  {
+    "model": "u4uapp.carrera",
+    "pk": 4,
+    "fields": {
+      "nombre": "Teología",
+      "universidades": [
+        2
+      ],
+      "infog": "La teología es la disciplina que se dedica a estudiar todo lo relacionado con el conocimiento sobre Dios. Así, pretende hacer aportes científicos a los planeamientos relacionados con la existencia de Dios. De esta manera, esta carrera está dedicada al estudio científico de cualquier Dios y religión. Por ejemplo, la cristiana, islámica o las religiones politeístas. Uno de los objetivos principales de la Licenciatura en Teología es el de formar profesionales que tengan la capacidad de proponer alternativas y soluciones a los problemas del mundo actual basados en el pluralismo sociocultural, la injusticia social, económica y cultural. Así como también a las crisis de sentido. Por lo tanto, las propuestas de soluciones están basadas en el análisis y la explicación de la experiencia de fe y las diferentes posturas teológicas. "
+    }
+  },
+  {
+    "model": "u4uapp.carrera",
+    "pk": 5,
+    "fields": {
+      "nombre": "Estética",
+      "universidades": [
+        2
+      ],
+      "infog": "El Esteticista Profesional está capacitado para realizar tratamientos integrales en el área de la imagen y estética corporal, aplicando procedimientos cosmetológicos, técnicas de relajación, higiene, modelamiento corporal, tratamientos faciales y atención de peluquería en corte, masaje, peinado y color, considerando la evaluación de las necesidades y requerimientos del cliente."
+    }
+  }
+]

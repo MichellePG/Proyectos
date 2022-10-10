@@ -1,0 +1,34 @@
+{% extends "./base.html" %}
+    
+  {% block content %}
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div id="oscurecer" class="carousel-item active" data-bs-interval="4000">
+              <img src="../static/u4uapp/campus-acerca.jpg" class="d-block w-100" alt="..." height="600px">
+            </div>
+            <div id="oscurecer" class="carousel-item" data-bs-interval="4000">
+              <img src="../static/u4uapp/imageservlet.jpeg" class="d-block w-100" alt="..." height="600px">
+            </div>
+            <div id="oscurecer" class="carousel-item" data-bs-interval="4000">
+              <img src="../static/u4uapp/sanjoaquin.jpg" class="d-block w-100" alt="..." height="600px">
+            </div>
+              <div class="carousel-caption" id="title">
+                  ¡Bienvenide!
+              </div>
+              <div class="carousel-caption" id="subtitle">
+                  ¿Preparade para la vida Universitaria?
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  {% endblock %}

@@ -1,0 +1,21 @@
+{% extends "./base.html" %}
+    
+{% block content %}
+
+<h1 class="m-3">Carreras</h1>
+
+<form action="" method="post">
+  {% csrf_token %} <!-- csrf token for basic security -->
+  <input type="search" id="carreras_busqueda" placeholder="Buscar... (cuidado acentos)" name="carreras_busqueda" style="margin: 15px">
+  <button class="btn btn-primary" name="aplicarBusqueda" type="submit"><i class="fa fa-plus icon"></i>Buscar</button>
+</form>
+      
+<div class="m-3 mt-5">
+  <h1 class="fw-light">Comentarios</h1>
+  <ul>
+    {% for carrera in carreras %}
+    <li><a href="/carrera/{{ carrera.id }}">{{ carrera.nombre }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

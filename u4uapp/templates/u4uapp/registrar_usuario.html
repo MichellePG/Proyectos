@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+  <head>
+      <meta charset="UTF-8">
+      <title>U4U - Registro</title>
+      <link rel="stylesheet" type="text/css" href="../static/u4uapp/signInUp.css">
+  </head>
+  <body>
+
+  <div class="container">
+      <div class="izquierda">
+          <div class="logo">
+                <div id="titulo">U4U</div>
+                <div id="titulo2">Portal sobre Educación Superior </div>
+          </div>
+          <div class="formulario">
+              <div class="box1">
+                  <h1>Registro</h1>
+                  <form action="" method="post">
+                        {% csrf_token %}
+                        <label for="nombre_usuario">Nombre</label>
+                        <input type="text" class="form-control" id="nombre_usuario" name="nombre_usuario" required>
+                        <label for="e-mail">E-mail</label>
+                        <input type="text" class="form-control" id="e-mail" name="e-mail" required>
+                        <label for="contrasena">Contrase&ntilde;a</label>
+                        <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+                        <button name="userAdd" type="submit">Crear usuario</button>
+                  </form>
+                  <a href="/"><button name="volver" type="button">Volver</button></a>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+  </body>

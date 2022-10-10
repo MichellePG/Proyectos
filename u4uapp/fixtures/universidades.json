@@ -1,0 +1,50 @@
+[
+  {
+    "model": "u4uapp.universidad", 
+    "pk": 1,
+    "fields": {
+      "nombre": "Universidad de Chile",
+      "tipo": "Pública",
+      "comuna": "Santiago",
+      "region": "Metropolitana",
+      "estudiantes": 40494,
+      "fundacion": 1842
+    }
+  },
+  {
+    "model": "u4uapp.universidad", 
+    "pk": 2,
+    "fields": {
+      "nombre": "Pontificia Universidad Católica de Chile",
+      "tipo": "Privada",
+      "comuna": "Santiago",
+      "region": "Metropolitana",
+      "estudiantes": 33769,
+      "fundacion": 1888
+    }
+  },
+  {
+    "model": "u4uapp.universidad",
+    "pk": 3,
+    "fields": {
+      "nombre": "Universidad de Concepción",
+      "tipo": "Privada",
+      "comuna": "Concepción",
+      "region": "Biobío",
+      "estudiantes": 28905,
+      "fundacion": 1919
+    }
+  },
+  {
+    "model": "u4uapp.universidad",
+    "pk": 4,
+    "fields": {
+      "nombre": "Universidad de Aysén",
+      "tipo": "Pública",
+      "comuna": "Coyhaique",
+      "region": "Aysén",
+      "estudiantes": 0,
+      "fundacion": 2015
+    }
+  }
+]

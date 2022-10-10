@@ -1,0 +1,38 @@
+{% extends "./base.html" %}
+    
+{% block content %}
+<section class="py-2 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Universidades</h1>
+      <form action="" method="post">
+      {% csrf_token %} <!-- csrf token for basic security -->
+        <input type="search" id="busqueda" class="form-control" placeholder="Buscar..." name="busqueda" style="margin: 15px">
+        <button class="btn btn-primary" name="aplicarBusqueda" type="submit"><i class="fa fa-plus icon"></i>Buscar</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      {% for universidad in universidades %}
+      <a href="/universidad/{{ universidad.id }}" style="text-decoration: none;color: inherit;">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="card-img-top" style="width:50px; height:auto;" src="/static/u4uapp/{{ universidad.id }}.png">
+            <div class="card-body">
+              <p class="card-text">{{ universidad.nombre }}</p>
+              <button class="btn btn-primary" name="aplicarBusqueda" type="submit"><i class="fa fa-plus icon"></i>Ver Perfil</button>
+              <button class="btn btn-primary" name="aplicarBusqueda" type="submit"><i class="fa fa-plus icon"></i>Ver Listado de carreras</button>
+            </div>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}

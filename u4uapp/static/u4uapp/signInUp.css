@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+body{
+    margin: 0;
+}
+
+.container {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/dc/Casa_Central_de_la_Universidad_de_Chile.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.izquierda {
+    background: linear-gradient(#01489C, rgba(80, 157, 205, 0.5));
+    display: grid;
+    grid-template-rows: 30% 70%;
+    place-items: center;
+    text-align: center;
+}
+
+#titulo {
+    text-shadow: 4px 3px 0 #7A7A7A;
+    font-size: 150px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    color: #FFFFFF;
+    font-family: Abel, sans-serif;
+}
+
+#titulo2 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 25px;
+    word-spacing: 2.6px;
+    color: #FFFFFF;
+    font-weight: 0;
+}
+
+.formulario {
+    text-align: justify;
+    font-family: Montserrat, sans-serif;
+}
+
+.box1 {
+    background-color: #FFFFFF;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: cornflowerblue;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.box1 h1 {
+    text-align: center;
+    color: black;
+    font-weight: 0;
+}
+
+.box1 input {
+    margin-top: 3px;
+    width: 97.5%;
+    margin-bottom: 10px;
+}
+
+.box1 input[type="text"],
+.box1 input[type="password"] {
+    font-family: Montserrat, sans-serif;
+}
+
+.box1 button[type="submit"] {
+    border: none;
+    border-radius: 2px;
+    background: #01489C;
+    color: white;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.box1 button[type="submit"]:hover {
+    background: #0778B9;
+}
+
+.box1 button[type="button"] {
+    border: none;
+    border-radius: 2px;
+    background: #01489C;
+    color: white;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.box1 button[type="button"]:hover {
+    background: #0778B9;
+}

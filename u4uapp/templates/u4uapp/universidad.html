@@ -1,0 +1,151 @@
+{% extends "./base.html" %}
+    
+{% block content %}
+
+<style>
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  </style>
+
+<style>
+  .myDiv {
+    border: 5px outset black;
+    background-color: skyblue;    
+    text-align: center;
+    width: 300px;
+    height: 100px;
+  }
+  </style>
+
+<style>
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+</style>
+
+<style>
+#first {
+  width: 100px;
+  float: left;
+  height: 300px;
+}
+</style>
+
+<style>
+#second {
+  width: 200px;
+  float: left;
+  height: 300px;
+}
+</style>
+
+<img src=
+"/static/u4uapp/{{ universidad.id }}.png"
+        style="width:80px; height:auto; text-align:center"
+        alt="universidad logo">
+
+
+<h1 class="fw-light" style="text-align:center;font-size:60px;"> {{ universidad.nombre }}</h1>
+
+<div class="m-3">
+  <table style="width:100%">
+    <tr>
+      <th>Tipo</th>
+      <th>Comuna</th>
+      <th>Regi&oacute;n</th>
+      <th>Estudiantes</th>
+      <th>Fundaci&oacute;n</th>
+    </tr>
+    <tr>
+      <td>{{ universidad.tipo }}</td>
+      <td>{{ universidad.comuna }}</td>
+      <td>{{ universidad.region }}</td>
+      <td>{{ universidad.estudiantes }}</td>
+      <td>{{ universidad.fundacion }}</td>
+    </tr>
+  </table>
+</div>
+
+
+
+<div class="container">
+  <div id="first">
+    <h1 class="fw-light" style="text-align:left"> Comentarios</h1>
+    {% for comentario in comentarios %}
+    <div class="myDiv">
+      <div class="card-header">
+        {{ comentario.autor.username }} -- {{ comentario.fecha_creacion }}
+      </div>
+      <div class="card-body">
+        {{ comentario.contenido }}
+      </div>
+    </div>
+    {% endfor %}
+
+    <form action="" method="post">
+      {% csrf_token %}  <!--csrf token for basic security -->
+      {{ form_comentario.contenido }}
+      
+      <p>{% if user.is_authenticated %}</p>
+      <button class="btn btn-primary" name="commentAdd" type="submit">Guardar</button>
+      {% else %}
+      <p>Inicia sesi&oacute;n para dejar un comentario</p>
+      {% endif %}
+    </form>
+
+    </div>
+  <div id="second">
+    <div class="m-3 mt-5">
+      <h1 class="fw-light" style="text-align:left"> Carreras</h1>
+      <ul>
+        {% for carrera in carreras %}
+        <li><a href="/carrera/{{ carrera.id }}">{{ carrera.nombre }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endblock %}
+  </div>
+</div>
+
+
+<!--
+{% for comentario in comentarios %}
+<div class="myDiv">
+  <div class="card-header">
+    {{ comentario.autor.username }} -- {{ comentario.fecha_creacion }}
+  </div>
+  <div class="card-body">
+    {{ comentario.contenido }}
+  </div>
+</div>
+{% endfor %}
+
+-->
+
+<!--
+<form action="" method="post">
+  {% csrf_token %}  csrf token for basic security 
+  {{ form_comentario.contenido }}
+  
+  <p>{% if user.is_authenticated %}</p>
+  <button class="btn btn-primary" name="commentAdd" type="submit">Agregar comentario</button>
+  {% else %}
+  <p>Inicia sesi&oacute;n para dejar un comentario</p>
+  {% endif %}
+</form>
+-->
+
+<!--
+<div class="m-3 mt-5">
+  <h5>Carreras</h5>
+  <ul>
+    {% for carrera in carreras %}
+    <li><a href="/carrera/{{ carrera.id }}">{{ carrera.nombre }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %-->

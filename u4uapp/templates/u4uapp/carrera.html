@@ -1,0 +1,47 @@
+{% extends "./base.html" %}
+    
+{% block content %}
+<section class="container">
+  <div class="row">
+    <div class="col-4">
+      <div style="width:100%">
+        <div style="border-right:1px solid #000000;"> 
+          <img class="card-img-top" style="width:400px; height:auto;" src="/static/u4uapp/{{ carrera.nombre }}.jpg">
+        </div>
+      </div>  
+     </div>
+    <div class="col-8 align-self-center">
+      <h3 class= "fw-light fs-1">{{ carrera.nombre }}</h3>
+      <hr>
+    </div>
+  </div> 
+</section>
+
+<div style="border-bottom:1px solid #000000;"></div> 
+
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h11 class="fw-normal"><b>Información General</b></h11>
+          <div class="col">
+            <div class="card shadow-sm">
+              <p class="card-text">{{ carrera.infog }}</p>
+            </div>
+          </div>      
+      </div>
+      <div class="col-sm">
+        <h11 class="fw-normal"><b>Impartida en:</b></h11>
+          <div class="col">
+            <div class="card shadow-sm">
+              <ul class="m-3">
+                {% for universidad in universidades %}
+                <li><a href="/carreraesp/{{ carrera.id }}{{ universidad.id }}">{{ universidad.nombre }}</a></li>
+                {% endfor %}
+              </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
